@@ -93,28 +93,26 @@ section {
 
 /* header */
 
-.logo {
+.nav__logo {
   display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: var(--accent-color);
-}
 
-header .logo {
   margin: 24px 93px 24px 0;
 }
 
-header .logo-fragment {
+.nav__logo--black {
   color: var(--black);
 }
 
-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
-header .container {
+.header__container {
   display: flex;
   align-items: center;
   min-height: 80px;
@@ -127,22 +125,22 @@ header .container {
   margin: 0;
 }
 
-.nav-item {
+.nav-list__item {
   display: inline-flex;
   align-items: center;
   position: relative;
 }
 
-header .nav ul {
+.nav-list {
   margin: 0;
   padding: 0;
 }
 
-.nav-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav .link {
+.nav-list__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -154,16 +152,16 @@ header .nav ul {
   transition: color var(--time) var(--cubic);
 }
 
-.link:hover,
-.link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--accent-color);
 }
 
-.nav-item .current {
+.nav-list__link--current {
   color: var(--accent-color);
 }
 
-.current::after {
+.nav-list__link--current::after {
   content: '';
   width: 100%;
   height: 4px;
@@ -184,7 +182,7 @@ header .nav ul {
   margin-right: 0;
 }
 
-.contacts .address-item {
+.contacts__address {
   display: flex;
   align-items: center;
 
@@ -197,26 +195,26 @@ header .nav ul {
   transition: color var(--time) var(--cubic);
 }
 
-.address-item:hover,
-.address-item:focus,
-.address-item:active {
+.contacts__address:hover,
+.contacts__address:focus,
+.contacts__address:active {
   color: var(--accent-color);
 }
 
-.contacts-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: var(--text-color);
 
   transition: fill var(--time) var(--cubic);
 }
 
-.address-item:hover .contacts-icon,
-.address-item:focus .contacts-icon,
-.address-item:active .contacts-icon {
+.contacts__address:hover .contacts__icon,
+.contacts__address:focus .contacts__icon,
+.contacts__address:active .contacts__icon {
   fill: var(--accent-color);
 }
 
-.contacts-item:nth-child(2) {
+.contacts__item:nth-child(2) {
   margin-left: 30px;
 }
 
@@ -589,7 +587,6 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* padding: 0 70px 0 0; */
 }
 
 footer .socials {
@@ -654,7 +651,6 @@ footer .address-item:not(:last-child) {
 
 .subscribtion {
   display: flex;
-  /* justify-content: flex-start; */
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -685,7 +681,6 @@ footer .address-item:not(:last-child) {
   letter-spacing: 0.03em;
   line-height: 1.25;
   color: var(--adress-transparency-color);
-  /* padding: 15px 16px; */
 }
 
 .subscribtion-button {
@@ -928,10 +923,6 @@ footer .address-item:not(:last-child) {
 }
 
 .checkbox {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* position: absolute; */
   width: 1px;
   height: 1px;
   margin: -1px;
